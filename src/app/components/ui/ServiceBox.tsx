@@ -22,9 +22,9 @@ const ServiceCard = ({
   const itemsAlignClass = align === "left" ? "items-start" : "items-center";
 
   return (
-    <div className="border border-gray-300 rounded-xl bg-theme-lightGray lg:w-80 lg:h-60 flex justify-center items-center">
+    <div className="border border-gray-300 rounded-xl bg-theme-lightGray xl:w-1/3 xl:h-60 flex justify-center items-center">
       <div
-        className={`flex flex-col ${itemsAlignClass} ${textAlignClass} px-4 py-6 w-full`}
+        className={`flex flex-col ${itemsAlignClass} ${textAlignClass} px-4 py-6 w-full h-full`}
       >
         <div
           className={`min-w-15 min-h-15 rounded-full flex justify-center items-center ${iconBgClass}`}

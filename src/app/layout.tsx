@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-screen flex flex-col justify-center items-center">
-        <div className="w-screen lg:w-[80vw] xl:w-[60vw] h-screen">
+        <div className="w-screen lg:w-[80vw] h-screen">
           <NavBar />
           {children}
           <Footer />
