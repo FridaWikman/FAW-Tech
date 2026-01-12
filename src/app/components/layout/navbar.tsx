@@ -3,7 +3,7 @@ import UiButton from "../ui/UiButton";
 
 const NavBar = () => {
   const links = [
-    { name: "Projekt", to: "/projects" },
+    // { name: "Projekt", to: "/projects" },
     { name: "Tjänster", to: "/services" },
     { name: "Om oss", to: "/about" },
     { name: "Kontakt", to: "/contact" },
@@ -14,7 +14,7 @@ const NavBar = () => {
       <div className="border-b border-gray-300 h-[10vh] flex items-center justify-between p-7 font-bold ">
         <div>
           <Link href="/" className="text-orange-400">
-            SEVORA
+            FAW Tech
           </Link>
         </div>
         <div className="flex justify-end gap-5 text-gray-400 hover:cursor-pointer">

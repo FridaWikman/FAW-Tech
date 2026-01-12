@@ -37,7 +37,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pt-10">
+          <div className="pt-30">
             <UiHeader headerContent="Varför välja oss?" />
             <UiSmallText
               textContent="Vi kombinerar design, teknik och strategi för att skapa
