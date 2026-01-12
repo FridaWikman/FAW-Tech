@@ -13,8 +13,8 @@ const About = () => {
     <>
       <div className="flex flex-col justify-center items-center pt-15">
         <div className="max-w-5/6">
-          <div className="flex flex-col md:flex-row justify-between items-center pb-15 gap-2">
-            <div className="w-1/2 flex flex-col items-start justify-start gap-3">
+          <div className="flex flex-col md:flex-row justify-between items-center pb-15 gap-6">
+            <div className="flex-3 flex flex-col items-start justify-start gap-3">
               <h1 className="text-4xl font-extrabold text-start flex flex-col">
                 Möt teamet bakom <span className="text-orange-400">koden</span>
               </h1>
@@ -30,13 +30,12 @@ const About = () => {
                 variant="teal"
               />
             </div>
-            <div>
+            <div className="md:flex-2 w-full h-68 relative">
               <Image
                 alt="computer-image"
                 src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                width={300}
-                height={300}
-                className="rounded-xl"
+                fill
+                className="object-cover rounded-xl"
               />
             </div>
           </div>

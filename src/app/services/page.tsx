@@ -37,8 +37,8 @@ const Services = () => {
     <>
       <div className="flex flex-col justify-center items-center pt-15">
         <div className="max-w-5/6">
-          <div className="flex flex-col md:flex-row justify-between items-center pb-15 gap-6">
-            <div className="w-1/2 flex flex-col items-start justify-start gap-3">
+          <div className="flex flex-col md:flex-row items-center pb-15 gap-6">
+            <div className="flex-3 flex flex-col items-start justify-start gap-3 md:pe-5">
               <h1 className="text-4xl font-extrabold text-start">
                 Vi bygger digitala{" "}
                 <span className="text-orange-400">lösningar</span> som ger{" "}
@@ -49,13 +49,14 @@ const Services = () => {
                 webbplatser för företag som vill växa.
               </p>
             </div>
-            <div>
+            <div className="md:flex-2 w-full h-68 relative">
               <Image
                 alt="computer-image"
                 src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                width={300}
-                height={300}
-                className="rounded-xl"
+                // width={300}
+                // height={300}
+                fill
+                className="object-cover rounded-xl"
               />
             </div>
           </div>
@@ -65,34 +66,28 @@ const Services = () => {
               textContent="Vi erbjuder ett utbud av tjänster för att ta din digitala närvaro till
           nästa nivå. Från idé till lansering."
             ></UiSmallText>
-            <div className="grid grid-cols-2 grid-rows-2 pt-10 gap-10">
-              {services.map((service, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="bg-theme-white w-80 h-auto gap-2  rounded-xl flex flex-col justify-center items-center p-5"
-                  >
-                    <div className="max-h-2/3">
-                      <Image
-                        alt="service image"
-                        src={service.image}
-                        width={300}
-                        height={300}
-                        // style={{
-                        //   objectFit: "scale-down",
-                        //   width: "100%",
-                        //   height: "100%",
-                        // }}
-                        className="rounded-xl"
-                      />
-                    </div>
-                    <h3 className="font-bold">{service.header}</h3>
-                    <p className="text-gray-400 text-center">
-                      {service.content}
-                    </p>
+            {/* <div className="grid grid-cols-2 grid-rows-2 pt-10 gap-10"> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 pt-10 px-5 gap-10 auto-rows-fr w-full">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-theme-white w-full max-w-md rounded-xl flex flex-col p-5 gap-4 mx-auto"
+                >
+                  <div className="w-full h-48 relative">
+                    <Image
+                      alt="service image"
+                      src={service.image}
+                      fill
+                      className="object-cover rounded-xl"
+                    />
                   </div>
-                );
-              })}
+
+                  <h3 className="font-bold text-center">{service.header}</h3>
+                  <p className="text-gray-400 text-center text-sm">
+                    {service.content}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
