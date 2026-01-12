@@ -1,7 +1,7 @@
 import Link from "next/link";
 import UiButton from "../ui/UiButton";
 
-const NavBar = () => {
+const Navbar = () => {
   const links = [
     // { name: "Projekt", to: "/projects" },
     { name: "Tjänster", to: "/services" },
@@ -34,4 +34,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

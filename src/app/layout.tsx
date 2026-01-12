@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import NavBar from "./components/layout/navbar";
-
+import Navbar from "./components/layout/navbar";
 import "./globals.css";
 import Footer from "./components/layout/footer";
 
@@ -17,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-screen flex flex-col justify-center items-center">
-        <div className="w-screen lg:w-[80vw] h-screen">
-          <NavBar />
-          {children}
+        <div className="w-screen lg:w-[80vw]">
+          <Navbar />
+          <div className="min-h-screen">{children}</div>
           <Footer />
         </div>
       </body>
